@@ -6,7 +6,7 @@ The project explores Canada’s marketable natural gas production, historical tr
 ## 📌 Project Objective
 - Analyze historical marketable natural gas production (2000–2025)
 - Identify structural changes by Year-over-Year (YoY) and Compound Annual Growth Rate (GAGR) Analyses
-- Classified production regimes by using a ±3% threshol, with explanations linked to major global events
+- Classified production regimes by using a ±3% threshold, with explanations linked to major global events
 - Smoothed Structural Analysis for rolling trends
 - Forecast production and assess LNG Canada Phase 1 supply adequacy and potential tightness
 - Provide an interactive tool for trend exploration and scenario analysis
