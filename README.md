@@ -124,4 +124,7 @@ Please view the full report (PDF) and interact with the live application here:
 - [Streamlit App on Hugging Face Spaces](https://huggingface.co/spaces/jyunyilin/canadian_marketable_natural_gas_supply_trends)
 
 ## ✨ Future Improvements
-
+- Extend forecasts under alternative LNG demand scenarios (e.g., additional export terminals, policy changes)
+- Incorporate external drivers such as natural gas prices, drilling activity, or macroeconomic indicators
+- Apply additional change-point detection methods for robustness comparison
+- Enhance the interactive application with scenario simulation tools
