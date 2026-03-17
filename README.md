@@ -1,4 +1,7 @@
 # 🛢️ Canadian Marketable Natural Gas Supply Trends
+This project was developed as part of the **Data Science Mentorship Program** hosted by the Society of Petroleum Engineers (SPE) Calgary Section. Special thanks to my mentor **Ryan A. Mardani** for professional guidance and insights.
+
+The project explores Canada’s marketable natural gas production, historical trends, structural changes, LNG demand-supply adequacy, and forecasting using SARIMA and Prophet models. It also includes an interactive Streamlit application for visualization and analysis.
 
 ## 📌 Project Objective
 
