@@ -38,7 +38,7 @@ The project explores Canada’s marketable natural gas production, historical tr
 │   ├── 03_structural_change.ipynb  # Rolling, change-point analysis
 │   ├── 04_unit_conversion.ipynb    # e3m3/d to mtpa
 │   ├── 05_forecasting.ipynb        # SARIMA / Prophet forecasting
-│   └── 06_build_app_dataset.csv
+│   └── 06_build_app_dataset.ipynb
 │
 ├── src/  
 │   ├── __init__.py            
