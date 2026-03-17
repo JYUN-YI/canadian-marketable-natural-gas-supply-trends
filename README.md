@@ -74,25 +74,49 @@ The project explores Canada’s marketable natural gas production, historical tr
 | Refitting Period     | 2000–2025     | Models retrained on full available dataset |
 | Forecast Horizon     | 2026–2030     | Production projections for LNG adequacy analysis |
 
-## 🔑 Feature Importance Analysis
-
 ## 🚀 Interactive Application
+The interactive dashboard is deployed using **Streamlit** on **Hugging Face Spaces**.
+
+Users can navigate across multiple pages, including:
+- Executive Overview
+- Historical & Structural
+- LNG Supply
+- Forecasting
+- Limitations & Assumptions
 
 ## ⚙️ Technologies Used
 - Programming Language: Python
 - Data Processing: Pandas, NumPy
 - Data Visualization: Matplotlib, Seaborn
-- Time Series Models: 
+- Statistical & Time Series Modeling: statsmodels (SARIMA / SARIMAX), Prophet
+- Structural Change Detection: ruptures (PELT algorithm)
+- Model Evaluation: scikit-learn (MAE, RMSE)
 - Deployment: Streamlit, Docker, Hugging Face Spaces
 - Version Control: Git, GitHub
 - Development Environment: Databricks Free Edition
 
 ## 📎 Dataset
 ### Raw Data
-
+- Source: Canada Energy Regulator (CER)
+- File: `canadian-marketable-natural-gas-productions.XLSX`
+- Description: Monthly marketable natural gas production data for Canada, reported in mmcfd and 10³ m³/d.
 
 ### Processed Data
+All processed datasets used in the analysis and application are stored in `data/processed/`.
 
+#### Historical Production Data
+- `canadian_marketable_gas_2000_25_mmcfd.csv`
+- `canadian_marketable_gas_2000_25_103m3d.csv`
+- `canadian_marketable_gas_2023_25_mmcfd.csv`
+- `canadian_marketable_gas_2023_25_103m3d.csv`
+
+#### Application Datasets (`data/processed/app_data/`)
+- `production_master.csv` — Cleaned master dataset for analysis
+- `structural_breaks.csv` — Identified structural change points and major events
+- `lng_supply_demand.csv` — LNG Canada Phase 1 demand assumptions and supply data
+- `forecast_sarima.csv` — SARIMA forecast results (2026–2030)
+- `forecast_prophet.csv` — Prophet forecast results (2026–2030)
+- `forecast_results.csv` — Combined forecast, incremental supply, and supply gap analysis
 
 ## 🎨 Portfolio Showcase
 Please view the full report (PDF) and interact with the live application here: 
