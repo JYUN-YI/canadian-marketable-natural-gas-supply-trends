@@ -70,7 +70,8 @@
 
 
 ## 🎨 Portfolio Showcase
-Please view the report and interact with the live application here: 
+Please view the full report (PDF) and interact with the live application here: 
+- [Canadian Natural Gas Production Trends and Upstream Capacity to Support LNG Canada Phase 1](outputs/Canadian_Natural_Gas_Production_Trends_Upstream_Capacity_LNG_Canada_Phase1.pdf)
 - [Streamlit App on Hugging Face Spaces](https://huggingface.co/spaces/jyunyilin/canadian_marketable_natural_gas_supply_trends)
 
 ## ✨ Future Improvements
