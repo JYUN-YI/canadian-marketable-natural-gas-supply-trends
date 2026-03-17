@@ -90,7 +90,7 @@ Users can navigate across multiple pages, including:
 - Data Visualization: Matplotlib, Seaborn
 - Statistical & Time Series Modeling: statsmodels (SARIMA / SARIMAX), Prophet
 - Structural Change Detection: ruptures (PELT algorithm)
-- Model Evaluation: scikit-learn (MAE, RMSE)
+- Model Evaluation: Scikit-Learn (MAE, RMSE)
 - Deployment: Streamlit, Docker, Hugging Face Spaces
 - Version Control: Git, GitHub
 - Development Environment: Databricks Free Edition
