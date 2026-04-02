@@ -84,8 +84,11 @@ The interactive dashboard is deployed using **Streamlit** on **Hugging Face Spac
 ![demo](https://raw.githubusercontent.com/JYUN-YI/canadian-marketable-natural-gas-supply-trends/main/assets/demo.gif)<br>
 Users can navigate across multiple pages, including:
 - Historical Production Overview
+Includes unit converters (mtpa, e3m3d, bcm/year), an LNG demand slider, and a configurable YoY growth threshold (0–10%).
 - Forecasting Analysis
+Allows model selection, interactive control of model outputs, and LNG demand scenario adjustments.
 - Limitations & Assumptions
+Outlines key assumptions and provides context on the intended use and limitations of the dashboard.
 
 ## ⚙️ Technologies Used
 - Programming Language: Python
