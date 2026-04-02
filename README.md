@@ -23,14 +23,16 @@ The project explores Canada’s marketable natural gas production, historical tr
 │       ├── canadian_marketable_gas_2000_25_103m3d.csv
 │       ├── canadian_marketable_gas_2023_25_mmcfd.csv
 │       ├── canadian_marketable_gas_2023_25_103m3d.csv
-│       │
 │       └── app_data/   
-│           ├── forecast_results.csv
-│           ├── forecast_prophet.csv
-│           ├── forecast_sarima.csv
-│           ├── lng_supply_demand.csv
+│           ├── structural_breaks.csv
+│           ├── forecast_result.csv
+│           ├── forecast_prophet_full.csv
+│           ├── forecast_sarima_full.csv
+│           ├── historical.csv
 │           ├── production_master.csv
-│           └── structural_breaks.csv
+│           ├── production_monthly.csv
+│           ├── prophet_full.csv
+│           └── sarima_full.csv
 │
 ├── notebooks/             
 │   ├── 01_data_prep.ipynb    
@@ -38,17 +40,20 @@ The project explores Canada’s marketable natural gas production, historical tr
 │   ├── 03_structural_change.ipynb  # Rolling, change-point analysis
 │   ├── 04_unit_conversion.ipynb    # e3m3/d to mtpa
 │   ├── 05_forecasting.ipynb        # SARIMA / Prophet forecasting
-│   └── 06_build_app_dataset.ipynb
+│   └── 06_build_app_dataset.ipynb  # Build final model-ready dataset for Streamlit app
 │
 ├── src/  
 │   ├── __init__.py            
-│   ├── data_loader.py                     
+│   ├── data_loader.py        # Load raw datasets from /data          
 │   ├── data_processor.py     # Cleaning, calculating CAGR, and rolling logic
 │   ├── unit_converter.py     # Unit conversion functions
 │   └── plot_helpers.py       # Reusable plotting functions
 │
 ├── app/
 │   └── streamlit_app.py
+│
+├── assets/
+│   └── demo.gif
 │
 ├── outputs/                 
 │   ├── Canadian_Natural_Gas_Production_Trends_Upstream_Capacity_LNG_Canada_Phase1.pptx
@@ -109,12 +114,15 @@ All processed datasets used in the analysis and application are stored in `data/
 - `canadian_marketable_gas_2023_25_103m3d.csv`
 
 #### Application Datasets (`data/processed/app_data/`)
-- `production_master.csv` — Cleaned master dataset for analysis
-- `structural_breaks.csv` — Identified structural change points and major events
-- `lng_supply_demand.csv` — LNG Canada Phase 1 demand assumptions and supply data
-- `forecast_sarima.csv` — SARIMA forecast results (2026–2030)
-- `forecast_prophet.csv` — Prophet forecast results (2026–2030)
-- `forecast_results.csv` — Combined forecast, incremental supply, and supply gap analysis
+- `production_master.csv`
+- `production_monthly.csv`
+- `structural_breaks.csv` 
+- `historical.csv` 
+- `forecast_sarima_full.csv` 
+- `forecast_prophet_full.csv`
+- `forecast_results.csv`
+- `sarima_full.csv` 
+- `prophet_full.csv`
 
 ## 🎨 Portfolio Showcase
 Please view the full report (PDF) and interact with the live application here: 
