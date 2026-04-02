@@ -81,7 +81,7 @@ The project explores Canada’s marketable natural gas production, historical tr
 
 ## 🚀 Interactive Application
 The interactive dashboard is deployed using **Streamlit** on **Hugging Face Spaces**.<br>
-![demo](https://raw.githubusercontent.com/JYUN-YI/canadian-marketable-natural-gas-supply-trends/main/assets/demo.gif)<br>
+<img src="https://raw.githubusercontent.com/JYUN-YI/canadian-marketable-natural-gas-supply-trends/main/assets/demo.gif" width="800">
 Users can navigate across multiple pages, including:
 - Historical Production Overview
 - Forecasting Analysis
