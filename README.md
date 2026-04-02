@@ -86,7 +86,7 @@ Users can navigate across multiple pages, including:
 - Historical Production Overview
   - Includes unit converters (mtpa, e3m3d, bcm/year), an LNG demand slider, and a configurable YoY growth threshold (0–10%)
 - Forecasting Analysis
-  - Allows model selection, interactive control of model outputs, and LNG demand scenario adjustments, view mode switching
+  - Allows model selection, interactive control of model outputs, LNG demand scenario adjustments, and view mode switching
 - Limitations & Assumptions
   - Outlines key assumptions and provides context on the intended use and limitations of the dashboard
 
