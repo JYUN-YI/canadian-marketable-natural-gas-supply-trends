@@ -9,39 +9,22 @@ DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "processed" / "app_dat
 # --------------------------
 # Load Functions
 # --------------------------
-def load_production_data() -> pd.DataFrame:
-    """
-    Load historical production data
-    """
-    return pd.read_csv(DATA_DIR / "production_master.csv")
+def standardize_data(df):
+    df = df.copy()
+    df.columns = df.columns.str.strip()
 
+    if "Year" in df.columns:
+        df["ds"] = pd.to_datetime(df["Year"].astype(str) + "-01-01")
 
-def load_lng_data() -> pd.DataFrame:
-    """
-    Load LNG supply analysis
-    """
-    return pd.read_csv(DATA_DIR / "lng_supply_demand.csv")
+    if "ds" in df.columns:
+        df["ds"] = pd.to_datetime(df["ds"])
 
-def load_structural_breaks() -> pd.DataFrame:
-    """
-    Load structural break / change point data
-    """
-    return pd.read_csv(DATA_DIR / "structural_breaks.csv")
+    return df
 
-def load_forecast_sarima() -> pd.DataFrame:
-    """
-    Load SARIMA forecast results
-    """
-    return pd.read_csv(DATA_DIR / "forecast_sarima.csv")
+def load_monthly():
+    df = pd.read_csv(DATA_DIR / "production_monthly.csv")
+    return standardize_data(df)
 
-def load_forecast_prophet() -> pd.DataFrame:
-    """
-    Load Prophet forecast results
-    """
-    return pd.read_csv(DATA_DIR / "forecast_prophet.csv")
-
-def load_forecast_results() -> pd.DataFrame:
-    """
-    Load forecast results
-    """
-    return pd.read_csv(DATA_DIR / "forecast_results.csv")
+def load_annual():
+    df = pd.read_csv(DATA_DIR / "production_master.csv")
+    return standardize_data(df)
