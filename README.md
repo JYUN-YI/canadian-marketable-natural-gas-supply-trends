@@ -75,8 +75,8 @@ The project explores Canada’s marketable natural gas production, historical tr
 | Forecast Horizon     | 2026–2030     | Production projections for LNG adequacy analysis |
 
 ## 🚀 Interactive Application
-The interactive dashboard is deployed using **Streamlit** on **Hugging Face Spaces**.
-![demo](https://raw.githubusercontent.com/JYUN-YI/canadian-marketable-natural-gas-supply-trends/main/assets/demo.gif)
+The interactive dashboard is deployed using **Streamlit** on **Hugging Face Spaces**.<br>
+![demo](https://raw.githubusercontent.com/JYUN-YI/canadian-marketable-natural-gas-supply-trends/main/assets/demo.gif)<br>
 Users can navigate across multiple pages, including:
 - Historical Production Overview
 - Forecasting Analysis
